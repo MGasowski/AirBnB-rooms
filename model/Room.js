@@ -51,7 +51,7 @@ const RoomSchema = new Schema({
         "type": "String"
     },
     "maximum_nights": {
-        "type": "Date"
+        "type": "number"
     },
     "cancellation_policy": {
         "type": "String"
@@ -105,9 +105,7 @@ const RoomSchema = new Schema({
         }
     },
     "bathrooms": {
-        "$numberDecimal": {
-            "type": "Date"
-        }
+            "type": "number"
     },
     "amenities": {
         "type": [
@@ -115,19 +113,13 @@ const RoomSchema = new Schema({
         ]
     },
     "price": {
-        "$numberDecimal": {
-            "type": "String"
-        }
+        "type": "number"
     },
     "extra_people": {
-        "$numberDecimal": {
-            "type": "String"
-        }
+         "type": "number"
     },
     "guests_included": {
-        "$numberDecimal": {
-            "type": "Date"
-        }
+            "type": "number"
     },
     "images": {
         "thumbnail_url": {
